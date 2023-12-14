@@ -332,9 +332,9 @@ Getting information about fields
 
 Landlab offers a command line interface that lets you find out about all the fields that are in use across all the Landlab components. You can find out the following:
 
-``$ landlab used_by [ComponentName]``  # What fields does ComponentName take as inputs?
+``$ landlab used-by [ComponentName]``  # What fields does ComponentName take as inputs?
 
-``$ landlab provided_by [ComponentName]``  # What fields does ComponentName give as outputs?
+``$ landlab provided-by [ComponentName]``  # What fields does ComponentName give as outputs?
 
 ``$ landlab uses [field__name]``  # What components take the field field__name as an input?
 
@@ -342,7 +342,7 @@ Landlab offers a command line interface that lets you find out about all the fie
 
 ``$ landlab list``  # list all the components
 
-``$ (landlab provided_by && landlab used_by) | sort | uniq``  # some command line magic to see all the fields currently used in components
+``$ (landlab provided-by && landlab used-by) | sort | uniq``  # some command line magic to see all the fields currently used in components
 
 
 Representing Gradients in a Landlab Grid
